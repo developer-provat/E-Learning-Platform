@@ -66,9 +66,3 @@ mini_udemy/
 
 ---
 
-
-2. Create Virtual Environment
-
-python -m venv venv
-venv\Scripts\activate      # Windows
-source
