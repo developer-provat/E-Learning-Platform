@@ -1,0 +1,9 @@
+<h2>Courses</h2>
+<ul>
+  {% for course in courses %}
+    <li><a href="{% url 'course_detail' course.id %}">{{ course.title }}</a></li>
+  {% endfor %}
+</ul>
+{% if user.is_authenticated %}
+  <a href="{% url 'course_create' %}">Create Course</a>
+{% endif %}

@@ -1,0 +1,10 @@
+<h2>{{ course.title }}</h2>
+<p>{{ course.description }}</p>
+<h3>Lessons</h3>
+<ul>
+  {% for lesson in course.lessons.all %}
+    <li><a href="{% url 'lesson_detail' lesson.id %}">{{ lesson.title }}</a></li>
+  {% empty %}
+    <li>No lessons yet.</li>
+  {% endfor %}
+</ul>

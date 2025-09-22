@@ -1,0 +1,27 @@
+# project settings
+mini_udemy/
+│
+├── manage.py
+├── mini_udemy/           
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+# user authentication (students & instructors)
+├── accounts/             
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── templates/accounts/
+│       ├── login.html
+│       ├── register.html
+│# courses & lessons
+├── courses/              
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── templates/courses/
+│       ├── course_list.html
+│       ├── course_detail.html
+│       ├── course_form.html
+│       ├── lesson_detail.html
